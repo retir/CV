@@ -1,0 +1,22 @@
+% custom graphics formatting
+\usepackage{graphicx}
+\graphicspath{ {./Images/} }
+
+% I didn't realise Charter was already built in
+\setmainfont{Charter}[
+Path = Fonts/,
+Extension = .otf,
+UprightFont = *-Regular,
+BoldFont = *-Bold,
+ItalicFont = *-Italic,
+BoldItalicFont = *-Bold-Italic
+]
+
+\begin{document}
+        $
+        \begin{array}{l}
+        \includegraphics[scale=0.03]{linkedin_black}
+        \end{array}
+        $
+
+\end{document}

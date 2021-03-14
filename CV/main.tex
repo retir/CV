@@ -1,0 +1,292 @@
+%-------------------------
+% Resume in Latex
+% Based off of: https://github.com/sb2nov/resume
+% and Jake Gutierrez's version of it
+% at https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+% inspired by https://practicaltypography.com/resumes.html
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[margin = 1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+
+%--------------UNDERLINING---------------
+% taken from https://alexwlchan.net/2017/10/latex-underlines/
+
+\usepackage{contour}
+\usepackage{ulem}
+
+\renewcommand{\ULdepth}{3.8pt}
+\contourlength{0.8pt}
+
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+%----------------------------------------
+
+\graphicspath{ {./Images/} }
+
+%----------FONT OPTIONS----------
+\usepackage{fontspec}
+\usepackage{fontawesome}
+
+% I could have just used the charter package here for the font I wanted...
+% but I'd still need to change compiler to XeLaTeX to include the title font
+% \usepackage{charter}
+
+\setmainfont{XCharter}
+
+\newfontfamily{\basictitle}{basictitlefont}[
+Path = Fonts/,
+Extension = .ttf,
+UprightFont = basictitlefont
+]
+% to use:
+% {\basictitle This text uses the basictitle font}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\iffalse
+% \iftrue
+\addtolength{\oddsidemargin}{0.3in}
+\addtolength{\marginparsep}{0.3in}
+\addtolength{\evensidemargin}{0.3in}
+\addtolength{\textwidth}{-0.5in}
+\addtolength{\topmargin}{0.3in}
+\addtolength{\textheight}{0.3in}
+\fi
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    {\color{gray}\titlerule} \vspace{-5pt}
+    \vspace{8pt}\scshape\raggedright\normalfont
+}{}{0pt}{}
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\headheight=-5mm
+\textheight=257mm
+\begin{document}
+
+
+
+%----------HEADING----------
+\vspace{10pt}
+{\basictitle \Huge Bobkov Denis}
+\\
+
+% ----- TOGGLE FOR PHOTO ----
+% \vspace{10pt}
+
+\href{mailto:dnbobkov@edu.hse.ru}{
+    \faEnvelope
+    \thinspace \thinspace
+    \myuline{dnbobkov@edu.hse.ru}} $|$
+\href{https://github.com/retir}{
+    \faGithub
+    \thinspace \thinspace
+    \myuline{retir}} $|$
+\faPhone
+\thinspace \thinspace
++65 1234 5678
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Higher School of Economics}{Moscow}
+      {Faculty of Computer Science}{Sep. 2019 -- exp. June 2023}
+      \resumeItemListStart
+      
+        \resumeItem{Applied Math and Informatics, 8.91/10.0}
+
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Higher School of Economics}{Moscow}
+      {Faculty of Economic Science }{Sep. 2020 -- exp. June 2022}
+      \resumeItemListStart
+      
+        \resumeItem{Financial Markets, 9/10}
+
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+  
+    %-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/hkrsmk/beepboop-shopee-code-league-2020}{\myuline{\textbf{Liquidity Forecasting}}}}{https://github.com/hkrsmk/beepboop}
+          \resumeItemListStart
+            \resumeItem{Analysing different liquidity metrics for patterns that is preceded by market crashes}
+            \resumeItem{Making a model to forecast this metrics uses machine learning algorithms}
+          \resumeItemListEnd
+          
+    \resumeProjectHeading
+          {\href{https://github.com/hkrsmk/beepboop-shopee-code-league-2020}{\myuline{\textbf{Dota 2 Pick Helper}}}}{https://github.com/hkrsmk/beepboop}
+          \resumeItemListStart
+            \resumeItem{Analysing different different sets of variables that influence on math win probability}
+            \resumeItem{Making a model that will predict match win probability}
+            \resumeItem{Making a recommendation system that will suggest heroes to pick based on created model}
+          \resumeItemListEnd
+          
+    \resumeProjectHeading
+          {\href{https://github.com/hkrsmk/beepboop-shopee-code-league-2020}{\myuline{\textbf{Blog}}}}{https://github.com/hkrsmk/beepboop}
+          \resumeItemListStart
+            \resumeItem{Based on Flask and SQLAlchemy}
+            \resumeItem{Contains database with posts, users and email registration}
+
+
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+   \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/hkrsmk/beepboop-shopee-code-league-2020}{\myuline{\textbf{Laboratory Works}}}}{https://github.com/hkrsmk/beepboop}
+          \resumeItemListStart
+            \resumeItem{A set of different laboratory works performed during study}
+            \resumeItem{Completed in Jypiter Notebook on Python 3}
+          \resumeItemListEnd
+          
+       \resumeProjectHeading
+          {\href{https://github.com/hkrsmk/beepboop-shopee-code-league-2020}{\myuline{\textbf{Algorithms and Data Structures}}}}{https://github.com/hkrsmk/beepboop}
+          \resumeItemListStart
+            \resumeItem{A branch of algorithms and structures that is performed during study}
+            \resumeItem{Written on C++ and Python 3, tested by Yandex.Contest}
+
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------RESEARCH-----------
+\section{Courses}
+  \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\href{https://edu.tinkoff.ru/course/181/program}{\myuline{
+         \bf{Tinkoff Applied Statistic}}}}{\href{https://edu.tinkoff.ru/course/181/program}{\myuline{Certificate link}}}
+          \resumeItemListStart
+            \resumeItem{Parameter estimation, base of machine learning}
+            \resumeItem{A/B testing}
+            \resumeItem{Production analysis}
+          \resumeItemListEnd
+          
+        \resumeSubheading
+      {\href{https://www.coursera.org/specializations/machine-learning-data-analysis}{\myuline{Machine Learning and Data Analysis}}}{\href{https://edu.tinkoff.ru/course/181/program}{\myuline{Certificate link}}}
+      {\href{https://www.coursera.org/learn/supervised-learning/home/welcome}{\myuline{Supervised Learning}}}{}
+      \resumeItemListStart
+        \resumeItem{Linear models}
+        \resumeItem{Random forest}
+        \resumeItem{Neural networks}
+        
+      \resumeItemListEnd
+      
+      \resumeProjectHeading
+          {\href{https://www.coursera.org/learn/data-bases-intr}{\myuline{
+         \bf{Databases}}}}{\href{https://coursera.org/share/efcd2d853910bcfed01234f789a5e06f}{\myuline{Certificate link}}}
+          \resumeItemListStart
+            \resumeItem{Relational databases}
+            \resumeItem{SQL queries}
+          \resumeItemListEnd
+         
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python 3, C/C++, SQL} \\
+     \textbf{Human Languages}{: Russian, English} \\
+     \textbf{Tools}{: Jupyter Notebooks, Git, LaTex} \\
+     \textbf{Libraries}{: NumPy, Pandas, MatPlotLib, SciKit-Learn}
+     }
+     }
+ \end{itemize}
+
+
+%
+\iffalse
+% \iftrue
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python 3, C/C++, SQL} \\
+     \textbf{Frameworks}{: WordPress} \\
+     \textbf{Tools}{: Jupyter Notebooks, Git, LaTex} \\
+     \textbf{Libraries}{: pandas, plotly}
+    }}
+ \end{itemize}
+\fi
+
+%-------------------------------------------
+\end{document}
