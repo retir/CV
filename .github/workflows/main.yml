@@ -3,7 +3,7 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Tex cheker
     steps:
       # To use this repository's private action,
       # you must check out the repository
@@ -16,4 +16,4 @@ jobs:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
       - name: Get the output time
-        run: ls
+        run: cd CV/ && xelatex main.tex
