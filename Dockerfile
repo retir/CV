@@ -14,5 +14,5 @@ RUN apt-get update && apt-get install --yes\
     
 COPY CV /CV
 COPY entrypoint.sh /entrypoint.sh
-COPY .git /.git
+
 ENTRYPOINT ["bash","/entrypoint.sh"]
