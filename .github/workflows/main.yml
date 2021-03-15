@@ -10,9 +10,9 @@ jobs:
       - name: Commit report
         run: |
           git config --global user.name 'retir'
-          git config --global user.email 'retir@users.noreply.github.com'
+          git config --global user.email 'dnbobkov@edu.hse.ru'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git checkout "${GITHUB_REF:11}"
           git add -A
-          git commit -am "Push Resume.pdf"
+          git commit -am "Autocommit pdf"
           git push
