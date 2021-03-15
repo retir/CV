@@ -1,2 +1,2 @@
 #!/bin/bash
-cd /cv && xelatex main.tex -interaction=nonstopmode
+cd /CV && xelatex main.tex -interaction=nonstopmode

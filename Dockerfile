@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install --yes\
     texlive-latex-recommended \
     texlive-base
     
-COPY CV /cv
+COPY CV /CV
 COPY entrypoint.sh /entrypoint.sh
+COPY .git /.git
 ENTRYPOINT ["bash","/entrypoint.sh"]
