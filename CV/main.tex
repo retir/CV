@@ -44,7 +44,7 @@
 
 %----------FONT OPTIONS----------
 \usepackage{fontspec}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 
 % I could have just used the charter package here for the font I wanted...
 % but I'd still need to change compiler to XeLaTeX to include the title font
@@ -130,7 +130,7 @@ UprightFont = basictitlefont
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\headheight=-10mm
+\headheight=-5mm
 \textheight=257mm
 \begin{document}
 
@@ -152,9 +152,7 @@ UprightFont = basictitlefont
     \faGithub
     \thinspace \thinspace
     \myuline{retir}} $|$
-\faPhone
-\thinspace \thinspace
-+88 0055 5358
+\href{https://t.me/retir}{\includegraphics[height=10pt]{telega} \myuline{retir}}%
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -164,7 +162,7 @@ UprightFont = basictitlefont
       {Faculty of Computer Science}{Sep. 2019 -- exp. June 2023}
       \resumeItemListStart
       
-        \resumeItem{Applied Math and Informatics, 8.91/10.0}
+        \resumeItem{Applied Math and Information Science, 8.91/10}
 
       \resumeItemListEnd
       
@@ -183,22 +181,22 @@ UprightFont = basictitlefont
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\href{https://github.com/hkrsmk/beepboop-shopee-code-league-2020}{\myuline{\textbf{Liquidity Forecasting}}}}{https://github.com/hkrsmk/beepboop}
+          {\href{https://github.com/retir/Liquidity-forecasting}{\myuline{\textbf{Liquidity Forecasting}}}}{https://github.com/retir/Liquidity-forecasting}
           \resumeItemListStart
-            \resumeItem{Analysing different liquidity metrics for patterns that is preceded by market crashes}
+            \resumeItem{Analysing different liquidity metrics for patterns  that precede a market crash}
             \resumeItem{Making a model to forecast this metrics uses machine learning algorithms}
           \resumeItemListEnd
           
     \resumeProjectHeading
-          {\href{https://github.com/hkrsmk/beepboop-shopee-code-league-2020}{\myuline{\textbf{Dota 2 Pick Helper}}}}{https://github.com/hkrsmk/beepboop}
+          {\href{https://github.com/maximkm/Dota2-pick-helper}{\myuline{\textbf{Dota 2 Pick Helper}}}}{https://github.com/maximkm/Dota2-pick-helper}
           \resumeItemListStart
-            \resumeItem{Analysing different different sets of variables that influence on math win probability}
-            \resumeItem{Making a model that will predict match win probability}
-            \resumeItem{Making a recommendation system that will suggest heroes to pick based on created model}
+            \resumeItem{Analysing different sets of variables that have influence on math win probability}
+            \resumeItem{Making a model that predicts the  probability of victory}
+            \resumeItem{Making a recommendation system that  suggests heroes to pick based on created model}
           \resumeItemListEnd
           
     \resumeProjectHeading
-          {\href{https://github.com/hkrsmk/beepboop-shopee-code-league-2020}{\myuline{\textbf{Blog}}}}{https://github.com/hkrsmk/beepboop}
+          {\href{https://github.com/retir/microblog}{\myuline{\textbf{Micro blog}}}}{https://github.com/retir/microblog}
           \resumeItemListStart
             \resumeItem{Based on Flask and SQLAlchemy}
             \resumeItem{Contains database with posts, users and email registration}
@@ -212,17 +210,17 @@ UprightFont = basictitlefont
 \section{Experience}
    \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\href{https://github.com/hkrsmk/beepboop-shopee-code-league-2020}{\myuline{\textbf{Laboratory Works}}}}{https://github.com/hkrsmk/beepboop}
+          {\href{https://github.com/retir/Laboratory-works}{\myuline{\textbf{Laboratory Works}}}}{https://github.com/retir/Laboratory-works}
           \resumeItemListStart
             \resumeItem{A set of different laboratory works performed during study}
-            \resumeItem{Completed in Jypiter Notebook on Python 3}
+            \resumeItem{Made in Jypiter Notebook (Python 3)}
           \resumeItemListEnd
           
        \resumeProjectHeading
-          {\href{https://github.com/hkrsmk/beepboop-shopee-code-league-2020}{\myuline{\textbf{Algorithms and Data Structures}}}}{https://github.com/hkrsmk/beepboop}
+          {\href{https://github.com/retir/Algorithms-and-data-structures}{\myuline{\textbf{Algorithms and Data Structures}}}}{https://github.com/retir/Algorithms-and-data-structures}
           \resumeItemListStart
-            \resumeItem{A branch of algorithms and structures that is performed during study}
-            \resumeItem{Written on C++ and Python 3, tested by Yandex.Contest}
+            \resumeItem{A branch of programs that is written during study}
+            \resumeItem{Written in C++ and Python 3, tested by Yandex.Contest}
 
           \resumeItemListEnd
 
@@ -235,7 +233,7 @@ UprightFont = basictitlefont
           {\href{https://edu.tinkoff.ru/course/181/program}{\myuline{
          \bf{Tinkoff Applied Statistic}}}}{\href{https://edu.tinkoff.ru/course/181/program}{\myuline{Certificate link}}}
           \resumeItemListStart
-            \resumeItem{Parameter estimation, base of machine learning}
+            \resumeItem{Parameter estimation}
             \resumeItem{A/B testing}
             \resumeItem{Production analysis}
           \resumeItemListEnd
@@ -265,8 +263,8 @@ UprightFont = basictitlefont
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python 3, C/C++, SQL} \\
-     \textbf{Human Languages}{: Russian, English} \\
-     \textbf{Tools}{: Jupyter Notebooks, Git, LaTex} \\
+     \textbf{Spoken Languages}{: Russian, English} \\
+     \textbf{Tools}{: Jupyter Notebooks, Git, LaTex, Docker} \\
      \textbf{Libraries}{: NumPy, Pandas, MatPlotLib, SciKit-Learn}
      }
      }
@@ -282,7 +280,7 @@ UprightFont = basictitlefont
     \small{\item{
      \textbf{Languages}{: Python 3, C/C++, SQL} \\
      \textbf{Frameworks}{: WordPress} \\
-     \textbf{Tools}{: Jupyter Notebooks, Git, LaTex} \\
+     \textbf{Tools}{: Jupyter Notebooks, Git, LaTex, Docker} \\
      \textbf{Libraries}{: pandas, plotly}
     }}
  \end{itemize}
@@ -290,3 +288,4 @@ UprightFont = basictitlefont
 
 %-------------------------------------------
 \end{document}
+
