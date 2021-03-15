@@ -4,6 +4,8 @@ jobs:
   tex_test:
     runs-on: ubuntu-latest
     steps:
+      - name Checkout
+        uses: actions/checkout@v2
       - name: PDF upd
         uses: ./ # Uses an action in the root directory
       - name: Commit report
