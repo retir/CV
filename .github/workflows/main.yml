@@ -1,5 +1,5 @@
 name: Push commit
-on: push
+on: [push]
 jobs:
   report:
     runs-on: ubuntu-latest
@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v1
       - name: Commit report
         run: |
-          git config --global user.name 'Denis'
+          git config --global user.name 'retir'
           git config --global user.email 'retir@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git checkout "${GITHUB_REF:11}"
