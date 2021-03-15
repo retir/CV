@@ -8,7 +8,7 @@ jobs:
         uses: ./ # Uses an action in the root directory
       - name: Commit report
         run: |
-          ./entrypoint.sh
+          bash entrypoint.sh
           git config --global user.name 'retir'
           git config --global user.email 'retir@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
