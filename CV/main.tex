@@ -34,8 +34,8 @@
 \contourlength{0.8pt}
 
 \newcommand{\myuline}[1]{%
-  \uline{\phantom{#1}}%
-  \llap{\contour{white}{#1}}%
+	\uline{\phantom{#1}}%
+	\llap{\contour{white}{#1}}%
 }
 
 %----------------------------------------
@@ -84,38 +84,38 @@ UprightFont = basictitlefont
 
 % Sections formatting
 \titleformat{\section}{
-    {\color{gray}\titlerule} \vspace{-5pt}
-    \vspace{8pt}\scshape\raggedright\normalfont
+	{\color{gray}\titlerule} \vspace{-5pt}
+	\vspace{8pt}\scshape\raggedright\normalfont
 }{}{0pt}{}
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & #2 \\
+	\end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -123,9 +123,9 @@ UprightFont = basictitlefont
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,165 +133,164 @@ UprightFont = basictitlefont
 \headheight=-15mm
 \textheight=270mm
 \begin{document}
-
-
-
-%----------HEADING----------
-\vspace{10pt}
-{\basictitle \Huge Bobkov Denis}
-\\
-
-% ----- TOGGLE FOR PHOTO ----
-% \vspace{10pt}
-
-\href{mailto:dnbobkov@edu.hse.ru}{
-    \faEnvelope
-    \thinspace \thinspace
-    \myuline{dnbobkov@edu.hse.ru}} $|$
-\href{https://github.com/retir}{
-    \faGithub
-    \thinspace \thinspace
-    \myuline{retir}} $|$
-\href{https://t.me/retir}{\includegraphics[height=10pt]{telega} \myuline{retir}}%
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Higher School of Economics}{Moscow}
-      {Faculty of Computer Science}{Sep. 2019 -- exp. June 2023}
-      \resumeItemListStart
-      
-        \resumeItem{Applied Math and Information Science, 8.91/10}
-
-      \resumeItemListEnd
-      
-      \resumeSubheading
-      {Higher School of Economics}{Moscow}
-      {Faculty of Economic Science }{Sep. 2020 -- exp. June 2022}
-      \resumeItemListStart
-      
-        \resumeItem{Financial Markets, 9/10}
-
-      \resumeItemListEnd
-      
-  \resumeSubHeadingListEnd
-  
-    %-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\href{https://github.com/retir/Liquidity-forecasting}{\myuline{\textbf{Liquidity Forecasting}}}}{github.com/retir/Liquidity-forecasting}
-          \resumeItemListStart
-            \resumeItem{Analysing different liquidity metrics for patterns  that precede a market crash}
-            \resumeItem{Making a model to forecast this metrics uses machine learning algorithms}
-          \resumeItemListEnd
-          
-    \resumeProjectHeading
-          {\href{https://github.com/maximkm/Dota2-pick-helper}{\myuline{\textbf{Dota 2 Pick Helper}}}}{github.com/maximkm/Dota2-pick-helper}
-          \resumeItemListStart
-            \resumeItem{Analysing different sets of variables that have influence on math win probability}
-            \resumeItem{Making a model that predicts the  probability of victory}
-            \resumeItem{Making a recommendation system that  suggests heroes to pick based on created model}
-          \resumeItemListEnd
-          
-    \resumeProjectHeading
-          {\href{https://github.com/retir/microblog}{\myuline{\textbf{Micro blog}}}}{github.com/retir/microblog}
-          \resumeItemListStart
-            \resumeItem{Based on Flask and SQLAlchemy}
-            \resumeItem{Contains database with posts, users and email registration}
-
-
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-   \resumeSubHeadingListStart
-   \resumeProjectHeading
-          {\href{https://fintech.tinkoff.ru/activities/tinkoff_projects/olymp_math/}{\myuline{\textbf{Tinkoff and MSU math olimpiade}}}}{github.com/retir/certificates}
-          \resumeItemListStart
-            \resumeItem{Prize-winner of Tinkoff and MSU math olimpiade}
-          \resumeItemListEnd
-   
-      \resumeProjectHeading
-          {\href{https://github.com/retir/Laboratory-works}{\myuline{\textbf{Laboratory Works}}}}{github.com/retir/Laboratory-works}
-          \resumeItemListStart
-            \resumeItem{A set of different laboratory works performed during study}
-            \resumeItem{Made in Jypiter Notebook (Python 3)}
-          \resumeItemListEnd
-          
-       \resumeProjectHeading
-          {\href{https://github.com/retir/Algorithms-and-data-structures}{\myuline{\textbf{Algorithms and Data Structures}}}}{github.com/retir/Algorithms-and-data-structures}
-          \resumeItemListStart
-            \resumeItem{A branch of programs that is written during study}
-            \resumeItem{Written in C++ and Python 3, tested by Yandex.Contest}
-
-          \resumeItemListEnd
-
-    \resumeSubHeadingListEnd
-
-%-----------RESEARCH-----------
-\section{Courses}
-  \resumeSubHeadingListStart
-        \resumeProjectHeading
-          {\href{https://edu.tinkoff.ru/course/181/program}{\myuline{
-         \bf{Tinkoff Applied Statistic}}}}{\href{https://edu.tinkoff.ru/course/181/program}{\myuline{Certificate link}}}
-          \resumeItemListStart
-            \resumeItem{Parameter estimation}
-            \resumeItem{A/B testing}
-            \resumeItem{Production analysis}
-          \resumeItemListEnd
-          
-        \resumeSubheading
-      {\href{https://www.coursera.org/specializations/machine-learning-data-analysis}{\myuline{Machine Learning and Data Analysis}}}{\href{https://coursera.org/share/5df5c3867b6212327ec6c35ea8709017}{\myuline{Certificate link}}}
-      {\href{https://www.coursera.org/learn/supervised-learning?specialization=machine-learning-data-analysis}{\myuline{Supervised Learning}}}{}
-      \resumeItemListStart
-        \resumeItem{Linear models}
-        \resumeItem{Random forest}
-        \resumeItem{Neural networks}
-        
-      \resumeItemListEnd
-      
-      \resumeProjectHeading
-          {\href{https://www.coursera.org/learn/data-bases-intr}{\myuline{
-         \bf{Databases}}}}{\href{https://coursera.org/share/efcd2d853910bcfed01234f789a5e06f}{\myuline{Certificate link}}}
-          \resumeItemListStart
-            \resumeItem{Relational databases}
-            \resumeItem{SQL queries}
-          \resumeItemListEnd
-         
-  \resumeSubHeadingListEnd
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python 3, C/C++, SQL} \\
-     \textbf{Spoken Languages}{: Russian, English} \\
-     \textbf{Tools}{: Jupyter Notebooks, Git, LaTex, Docker} \\
-     \textbf{Libraries}{: NumPy, Pandas, MatPlotLib, SciKit-Learn}
-     }
-     }
- \end{itemize}
-
-
-%
-\iffalse
-% \iftrue
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python 3, C/C++, SQL} \\
-     \textbf{Frameworks}{: WordPress} \\
-     \textbf{Tools}{: Jupyter Notebooks, Git, LaTex, Docker} \\
-     \textbf{Libraries}{: pandas, plotly}
-    }}
- \end{itemize}
-\fi
-
-%-------------------------------------------
+	
+	
+	
+	%----------HEADING----------
+	\vspace{10pt}
+	{\basictitle \Huge Bobkov Denis}
+	\\
+	
+	% ----- TOGGLE FOR PHOTO ----
+	% \vspace{10pt}
+	
+	\href{mailto:dnbobkov@edu.hse.ru}{
+		\faEnvelope
+		\thinspace \thinspace
+		\myuline{dnbobkov@edu.hse.ru}} $|$
+	\href{https://github.com/retir}{
+		\faGithub
+		\thinspace \thinspace
+		\myuline{retir}} $|$
+	\href{https://t.me/retir}{\includegraphics[height=10pt]{telega} \myuline{retir}}%
+	
+	%-----------EDUCATION-----------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Higher School of Economics}{Moscow}
+	{Faculty of Computer Science (ML and applications spec)}{Sep. 2019 -- exp. June 2023}
+	\resumeItemListStart
+	
+	\resumeItem{Applied Math and Information Science, 8.67/10}
+	
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Higher School of Economics}{Moscow}
+	{Faculty of Economic Science }{Sep. 2020 -- exp. June 2022}
+	\resumeItemListStart
+	
+	\resumeItem{Financial Markets, 9/10}
+	
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	%-----------PROJECTS-----------
+	\section{Projects}
+	\resumeSubHeadingListStart
+	\resumeProjectHeading
+	{\href{https://github.com/retir/Telegram-notification-bot}{\myuline{\textbf{Telegram Notification Bot}}}}{github.com/retir/Telegram-notification-bot}
+	\resumeItemListStart
+	\resumeItem{Bot sends custom notifications to users}
+	\resumeItem{Users can select the body, time, and frequency of notifications sent}
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\href{https://github.com/maximkm/Dota2-pick-helper}{\myuline{\textbf{Dota 2 Pick Helper}}}}{github.com/maximkm/Dota2-pick-helper}
+	\resumeItemListStart
+	\resumeItem{Analysing different sets of variables that have influence on math win probability}
+	\resumeItem{Making a model that predicts the  probability of victory}
+	\resumeItem{Making a recommendation system that  suggests heroes to pick based on created model}
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\href{https://github.com/retir/microblog}{\myuline{\textbf{Micro blog}}}}{github.com/retir/microblog}
+	\resumeItemListStart
+	\resumeItem{Based on Flask and SQLAlchemy}
+	\resumeItem{Contains database with posts, users and email registration}
+	
+	
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+	
+	
+	%-----------EXPERIENCE-----------
+	\section{Experience}
+	\resumeSubHeadingListStart
+	\resumeProjectHeading
+	{\href{https://fintech.tinkoff.ru/activities/tinkoff_projects/olymp_math/}{\myuline{\textbf{Tinkoff and MSU math olimpiade}}}}{github.com/retir/certificates}
+	\resumeItemListStart
+	\resumeItem{Prize-winner of Tinkoff and MSU math olimpiade}
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\href{https://github.com/retir/Laboratory-works}{\myuline{\textbf{Laboratory Works}}}}{github.com/retir/Laboratory-works}
+	\resumeItemListStart
+	\resumeItem{A set of different laboratory works performed during study}
+	\resumeItem{Made in Jypiter Notebook (Python 3)}
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\href{https://github.com/retir/Algorithms-and-data-structures}{\myuline{\textbf{Algorithms and Data Structures}}}}{github.com/retir/Algorithms-and-data-structures}
+	\resumeItemListStart
+	\resumeItem{A branch of programs that is written during study}
+	\resumeItem{Written in C++ and Python 3, tested by Yandex.Contest}
+	
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	%-----------RESEARCH-----------
+	\section{Courses}
+	\resumeSubHeadingListStart
+	\resumeProjectHeading
+	{\href{https://edu.tinkoff.ru/course/181/program}{\myuline{
+				\bf{Tinkoff Applied Statistic}}}}{\href{https://edu.tinkoff.ru/course/181/program}{\myuline{Certificate link}}}
+	\resumeItemListStart
+	\resumeItem{Parameter estimation}
+	\resumeItem{A/B testing}
+	\resumeItem{Production analysis}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{\href{https://www.coursera.org/specializations/machine-learning-data-analysis}{\myuline{Machine Learning and Data Analysis}}}{\href{https://coursera.org/share/5df5c3867b6212327ec6c35ea8709017}{\myuline{Certificate link}}}
+	{\href{https://www.coursera.org/learn/supervised-learning?specialization=machine-learning-data-analysis}{\myuline{Supervised Learning}}}{}
+	\resumeItemListStart
+	\resumeItem{Linear models}
+	\resumeItem{Random forest}
+	\resumeItem{Neural networks}
+	
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\href{https://www.coursera.org/learn/data-bases-intr}{\myuline{
+				\bf{Databases}}}}{\href{https://coursera.org/share/efcd2d853910bcfed01234f789a5e06f}{\myuline{Certificate link}}}
+	\resumeItemListStart
+	\resumeItem{Relational databases}
+	\resumeItem{SQL queries}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	%-----------PROGRAMMING SKILLS-----------
+	\section{Skills}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{
+				\textbf{Languages}{: Python 3, C/C++, SQL} \\
+				\textbf{Spoken Languages}{: Russian, English} \\
+				\textbf{Tools}{: Jupyter Notebooks, Git, LaTex, Docker} \\
+				\textbf{Libraries}{: NumPy, Pandas, MatPlotLib, SciKit-Learn, PyTorch}
+			}
+		}
+	\end{itemize}
+	
+	
+	%
+	\iffalse
+	% \iftrue
+	%-----------PROGRAMMING SKILLS-----------
+	\section{Technical Skills}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{
+				\textbf{Languages}{: Python 3, C/C++, SQL} \\
+				\textbf{Frameworks}{: WordPress} \\
+				\textbf{Tools}{: Jupyter Notebooks, Git, LaTex, Docker} \\
+				\textbf{Libraries}{: pandas, plotly}
+		}}
+	\end{itemize}
+	\fi
+	
+	%-------------------------------------------
 \end{document}
-
